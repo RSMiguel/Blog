@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Contáctame</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/shutter.png">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Sansita+Swashed&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/beb337fd06.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+
+    <div id="agrupar">
+
+      <aside id="barra">
+        <nav id="menu">
+          <ul>
+            <li>
+              <a href="index.html#bio" target="_self"><img class="bubble" src="images/me.png"></a>
+            </li>
+            <li>
+              <a href="posts.html#feed" target="_self"><img class="bubble" src="images/post.png"></a>
+            </li>
+            <li>
+              <a href="portfolio.html#portfolio" onClick="expand(this)" onMouseOut="reduce(this)" target="_self"><img class="bubble" src="images/pictures.png"></a>
+            </li>
+            <li>
+              <a href="contact.html#contact" target="_self"><img class="bubble" src="images/paperplane.png"></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/miguel_reyes.jpg/" target="_blank"><img class="ig" src="images/instagram.png"></a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <section id="contact">
+        <h1>Déjame un mensaje!</h1>
+
+        <div class="formulario">
+          <form class="" action="mailto:rsanchezmiguelangel@gmail.com" method="post" enctype="text/plain">
+            <input type="text" class="nombre" onfocus="clean(this)" onblur="fill(this)" value="Tu nombre...">
+            <input type="email" class="email" onblur="fill(this)" value="@" placeholder="Tu correo electrónico...">
+            <textarea class="mensaje"  rows="10" cols="20" onfocus="clean(this)" onblur="fill(this)">Escribeme algo...</textarea>
+            <input type="submit" class="enviar" value="Enviar">
+          </form>
+        </div>
+      </section>
+
+    </div>
+
+    <footer id="pie">
+      <p class="instagram"><a class="media-link" href="https://www.instagram.com/miguel_reyes.jpg/" target="_blank"><i class="fab fa-instagram"></i></a></p>
+      <p class="author"><i class="far fa-copyright"></i> 2020 Miguel Reyes.</p>
+    </footer>
+
+    <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
