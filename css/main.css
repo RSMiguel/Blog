@@ -1,0 +1,171 @@
+@import "base.css";
+
+#writepost, #feed{
+    margin: 0 auto;
+    position: relative;
+    width: 75%;
+}
+
+div[id^="post"]{
+  position: relative;
+  padding: 3% 12%;
+  margin: 3% auto;
+  border: 3px solid #37474f;
+  border-radius: 10px;
+}
+
+.profile{
+  width: 5%;
+  float: left;
+}
+
+.details{
+  font-size: 1.1rem;
+  text-align: left;
+  margin-left: 60px;
+  margin-bottom: 28px;
+}
+
+.photo{
+  clear: both;
+  position: relative;
+  margin: 2.8% auto;
+}
+
+.info{
+  position: absolute;
+  left: 15px;
+  top: 200px;
+  z-index: -1;
+}
+
+.info p{
+  font-size: 1rem;
+}
+
+#portfolio{
+  margin: 0 auto;
+  position: relative;
+  left: 5vh;
+  width: 90%;
+}
+
+.intro{
+  font-size: 1.5rem;
+  padding: 0 12%
+}
+
+.album{
+  position: relative;
+  letter-spacing: 1rem;
+  margin: 2.5% auto;
+  width: 100%;
+  display: inline-block;
+}
+
+.album > .landscape{
+  margin-left: auto;
+}
+.album > .landscape:last-child{
+  margin-right: auto;
+}
+
+.original{
+  width: 100%;
+}
+.landscape{
+  width: 65%;
+}
+.portrait{
+  width: 32%;
+}
+.square{
+  width: 32.5%;
+}
+
+.original, .landscape, .portrait, .square{
+  vertical-align: top;
+  border-radius: 14px;
+  transition: 0.5s;
+  box-shadow: 0 5px 40px #3a3e50;
+}
+
+.original:hover, .landscape:hover, .portrait:hover, .square:hover{
+  transform: translateY(-40px);
+  box-shadow: 0 30px 40px #2C2C2C;
+}
+
+#feed .original:hover{
+  transform: translateX(95px);
+  box-shadow: 0 30px 100px #2C2C2C;
+}
+
+#bio{
+  width: 60%;
+  padding: 2% 5%;
+}
+
+.biophoto{
+  position: relative;
+  float: left;
+  margin: 0 5.5% 3% 0;
+  width: 30%;
+  border-radius: 100%;
+}
+
+.formulario{
+  margin-top: 50px;
+  width: 45%;
+}
+
+#fecha, #location, #aperture, #shutter, #iso, #descripcion, .publicar, .nombre, .email, .mensaje, .enviar{
+  font-family: 'Merriweather', serif;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1.5px solid;
+  padding: 1.5% 0.5%;
+  margin: 3% 0;
+  resize: none;
+}
+
+#fecha, #location, #descripcion, .publicar{
+  width: 29.5%;
+  background-color: #b0bec5;
+}
+
+#aperture, #shutter, #iso{
+  width: 15.5%;
+  background-color: #b0bec5;
+}
+
+#location{
+  width: 18%;
+}
+
+.publicar, .enviar{
+  display: block;
+  width: 20%;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.publicar:hover{
+  background-color: #9ab3f5;
+}
+
+.nombre, .email, .mensaje, .enviar{
+  width: 46%;
+  background-color: #93b5e1;
+}
+
+.nombre{
+  margin-right: 3%;
+}
+
+.mensaje, #descripcion{
+  width: 98%;
+}
+
+.enviar:hover{
+  background-color: #4e89ae;
+}
